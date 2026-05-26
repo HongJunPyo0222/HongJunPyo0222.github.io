@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍준표 | Backend Developer Portfolio</title>
+  <meta name="description" content="도전적인 과제를 즐기며 데이터 처리 역량을 겸비한 백엔드 개발자 홍준표의 포트폴리오입니다.">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Devicon for Tech Stack Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+  <!-- --- Header & Glassmorphic Navigation --- -->
+  <header id="header">
+    <div class="container navbar">
+      <a href="#hero" class="nav-logo">
+        JUNPYO<span>.dev</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#credentials" class="nav-link">Credentials</a>
+        <a href="#vision" class="nav-link">Vision & Contact</a>
+      </nav>
+    </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+  </header>
+
+  <!-- --- Hero Section (메인 화면) --- -->
+  <section class="section" id="hero">
+    <div class="container hero-wrapper">
+      <!-- Hero Content -->
+      <div class="hero-content reveal">
+        <span class="hero-subtitle">BACKEND DEVELOPER</span>
+        <h1 class="hero-title">
+          도전적인 과제를 즐기며<br>
+          <span class="gradient-text">데이터 역량을 겸비한</span><br>
+          백엔드 개발자 <span class="gradient-text-green">홍준표</span>입니다.
+        </h1>
+        <p class="hero-desc">
+          대용량 데이터 수집 및 정제 파이프라인(ETL) 구축과 분산 인프라 설계에 깊은 관심이 있으며, 안정적이고 효율적인 백엔드 시스템 설계에 가치를 둡니다.
+        </p>
+        
+        <!-- Info Grid -->
+        <div class="hero-info-grid">
+          <div class="info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">홍준표 (만 25세)</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Education</div>
+            <div class="info-value">동국대학교 컴퓨터AI학부</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Tech Domain</div>
+            <div class="info-value">Backend & Data Eng.</div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            포트폴리오 보기 <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/HongJunPyo0222" target="_blank" class="social-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://velog.io/@hong_computer" target="_blank" class="social-btn" title="Velog">
+              <i class="fa-solid fa-blog"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visuals (Profile + Terminal Mockup) -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <!-- Profile Glowing Avatar -->
+        <div class="profile-glow-ring">
+          <div class="profile-inner-ring">
+            <img src="asset/홍준표-반4em.jpg" alt="홍준표 프로필" class="profile-img">
+          </div>
+        </div>
+
+        <!-- Terminal Viewport -->
+        <div class="mock-terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="t-btn red"></span>
+              <span class="t-btn yellow"></span>
+              <span class="t-btn green"></span>
+            </div>
+            <span class="terminal-title">junpyo.json</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-prompt">cat developer_info.json</div>
+            <div class="terminal-output" id="terminal-text"></div>
+            <span class="terminal-cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- About Me (자기소개 및 학력) --- -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">안녕하세요, 홍준표입니다</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Personal Info Details -->
+        <div class="about-details reveal">
+          <div class="glass-card detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="detail-info">
+              <h4>학력 및 재학 사항</h4>
+              <p>동국대학교 컴퓨터AI학부 재학 (2026년 8월 졸업 예정)</p>
+              <p>누적 학점: <strong>3.52 / 4.5</strong></p>
+            </div>
+          </div>
+
+          <div class="glass-card detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="detail-info">
+              <h4>거주지 및 활동 영역</h4>
+              <p>경기도 남양주시 거주</p>
+              <p>원격 협업 및 서울/경기 전역 활발한 온·오프라인 모임 참여 가능</p>
+            </div>
+          </div>
+
+          <div class="glass-card detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="detail-info">
+              <h4>에너지의 원천, 스포츠 취미</h4>
+              <p>한계를 깨뜨리며 끈기를 기르는 아웃도어 및 트레이닝 취미</p>
+              <div class="about-hobbies">
+                <span class="hobby-badge"><i class="fa-solid fa-dumbbell"></i> 보디빌딩 (Bodybuilding)</span>
+                <span class="hobby-badge"><i class="fa-solid fa-person-running"></i> 러닝 (Running)</span>
+                <span class="hobby-badge"><i class="fa-solid fa-mountain"></i> 클라이밍 (Climbing)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personality / Strength & Weakness Interactive Card -->
+        <div class="glass-card personality-box reveal reveal-delay-2">
+          <div class="personality-header">
+            <button class="personality-tab active" data-tab="strengths">성격 장점 & 가치관</button>
+            <button class="personality-tab" data-tab="weaknesses">단점 & 극복 스토리</button>
+          </div>
+          
+          <div class="personality-content">
+            <!-- Strength Panel -->
+            <div class="personality-panel active" id="panel-strengths">
+              <h4><i class="fa-solid fa-circle-check"></i> 두터운 친화력 & 도전을 향한 엔진</h4>
+              <p>
+                <strong>뛰어난 소통 능력과 강한 적응력</strong>으로 주변 사람들과 두루두루 원만한 관계를 유지합니다. 팀 내 분위기를 부드럽고 활력 있게 이끌며, 기획자나 디자이너 등 타 직군과의 원활한 가교 역할을 수행합니다.
+              </p>
+              <p>
+                어려운 문제나 다뤄보지 않은 기술 스택을 직면했을 때 주저하지 않고, <strong>도전적인 과제를 풀어나가는 과정 자체를 즐깁니다.</strong> 난관에 부딪혀도 물러서지 않는 끈기로 솔루션을 끝까지 도출해냅니다.
+              </p>
+            </div>
+
+            <!-- Weakness Panel -->
+            <div class="personality-panel" id="panel-weaknesses">
+              <h4><i class="fa-solid fa-circle-exclamation"></i> 완벽주의의 전환 & 자동화를 통한 효율 극대화</h4>
+              <p>
+                <strong>단점:</strong> 모든 준비가 완벽하게 세팅되는 것을 기다리다 보니 다소 시도 자체를 두려워하거나 신중해지는 성향이 있었습니다. 또한, 비효율적인 단순 반복 작업에는 피로를 쉽게 느끼는 경향이 있습니다.
+              </p>
+              <div class="overcoming-points">
+                <div class="point-item">
+                  <div class="point-dot"></div>
+                  <div class="point-text"><strong>애자일한 접근:</strong> 완벽한 세팅 대신, 프로토타입을 빠르게 만들어 실행하며 실시간 피드백을 통해 보완해 나가는 애자일 방법론을 적극 도입하고 있습니다.</div>
+                </div>
+                <div class="point-item">
+                  <div class="point-dot"></div>
+                  <div class="point-text"><strong>반복의 자동화:</strong> 단순 반복적 과제를 수동으로 처리하는 대신, Python 스크립트 작성 및 자동화 스케줄러 등을 적극 설계하여 개발 리소스를 스마트하게 세이브합니다.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Skills (기술 스택) --- -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tech Stack</span>
+        <h2 class="section-title">전문 기술 스택</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="glass-card skill-category reveal">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-code"></i> Languages
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+            <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+            <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure & DevOps -->
+        <div class="glass-card skill-category reveal reveal-delay-1">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-server"></i> Infrastructure
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+            <span class="skill-tag"><i class="devicon-linux-plain colored"></i> Linux</span>
+            <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+            <span class="skill-tag"><i class="devicon-amazonwebservices-original colored"></i> AWS</span>
+          </div>
+        </div>
+
+        <!-- Artificial Intelligence & CV -->
+        <div class="glass-card skill-category reveal reveal-delay-2">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-brain"></i> Artificial Intel.
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag"><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+            <span class="skill-tag"><i class="fa-solid fa-microscope"></i> PaddleOCR</span>
+            <span class="skill-tag"><i class="devicon-tensorflow-line colored"></i> TensorFlow</span>
+          </div>
+        </div>
+
+        <!-- Collaboration -->
+        <div class="glass-card skill-category reveal reveal-delay-3">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-users"></i> Collaboration
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag"><i class="fa-solid fa-notes-medical"></i> Notion</span>
+            <span class="skill-tag"><i class="fa-solid fa-message"></i> Mattermost</span>
+            <span class="skill-tag"><i class="fa-solid fa-chart-simple"></i> Tableau</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Experience & Education (경력 및 교육) --- -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Timeline</span>
+        <h2 class="section-title">경험 및 교육 이력</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- 1 -->
+        <div class="timeline-item left reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">24.07.03 ~ 24.08.23</span>
+            <h3>복정도서관</h3>
+            <p><strong>하계 대학생 지방 행정체험 연수</strong></p>
+            <p>도서 도서 정리 및 민원인 오프라인 응대, 공무 시스템 기초 행정 서류 보조.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="timeline-item right reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">24.10.13 ~ 25.10.24</span>
+            <h3>Tableau Bootcamp 29기 수료</h3>
+            <p><strong>데이터 시각화 및 BI 스킬 함양</strong></p>
+            <p>비즈니스 인텔리전스 도구 Tableau를 통한 정교한 데이터 대시보드 설계와 상관분석 학습.</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="timeline-item left reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">25.07.01 ~ 25.12.31</span>
+            <h3>소만사</h3>
+            <p><strong>장기현장실습 (연구개발 보조)</strong></p>
+            <p>사내 OCR 머신러닝 모듈 고도화 보조 및 데이터 전처리, PaddleOCR 텍스트 인식 테스트 성능 평가 담당.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="timeline-item right reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">26.01.05 ~ 26.02.08</span>
+            <h3>네이버 부스트코스 수료</h3>
+            <p><strong>파이썬을 이용한 웹 스크래핑 과정</strong></p>
+            <p>BeautifulSoup4, Selenium 등을 이용한 대용량 웹 데이터 추출 파이프라인 설계 및 정제 자동화 구축.</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="timeline-item left reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">26.01.13 ~ 26.01.14</span>
+            <h3>동국대학교 AI Starter Program</h3>
+            <p><strong>인공지능 실무 기본 교육 과정</strong></p>
+            <p>머신러닝·딥러닝 데이터 분석 툴킷의 기초 활용 방법 학습 및 실습 미니 프로젝트 수행.</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="timeline-item right reveal">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-box">
+            <span class="timeline-date">26.04.06 ~ 진행 중</span>
+            <h3>현대퓨처넷 Full-Stack 전문가 과정 10기</h3>
+            <p><strong>MSA 기반 Full Stack 개발 전문가 양성과정</strong></p>
+            <p>마이크로서비스 아키텍처(MSA) 기반 Spring Cloud 백엔드 설계 및 React 프론트엔드 통합 풀스택 엔지니어링 훈련 중.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Projects (프로젝트 포트폴리오) --- -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">대표 개발 프로젝트</h2>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 1 -->
+        <div class="project-item reveal">
+          <div class="project-media-wrapper">
+            <img src="asset/image (1).png" alt="아이뽓 AI 육아 서비스 스크린샷" class="project-img">
+            <div class="project-media-glow"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">AI Chatbot & Data ETL Service</span>
+              <h3 class="project-title">아이뽓 (Eye-Pot)</h3>
+            </div>
+            <p class="project-desc">
+              서울시 저출산 관련 예비·초보 부모들을 위한 임신·출산·육아 복잡한 복지 혜택과 지자체 정보를 원스톱 제공하는 AI 기반 챗봇 서비스입니다. 공공 Open API 기반 대용량 데이터 연동 및 지식 데이터베이스 구축을 도맡았습니다.
+            </p>
+            
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>담당 역할</h5>
+                <p>백엔드 인프라 설계, ETL 데이터 파이프라인 및 데이터베이스 설계</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>주요 기능</h5>
+                <p>서울 열린데이터광장 Open API 연동 수집 파이프라인 설계, 데이터 정제 및 고성능 쿼리 인덱싱 적용</p>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">AWS EC2</span>
+              <span class="project-tag">Open API</span>
+              <span class="project-tag">ETL Pipeline</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item reverse reveal">
+          <div class="project-media-wrapper">
+            <img src="asset/image (2).png" alt="AI 이어폰 위험 상황 알림 시스템 스크린샷" class="project-img">
+            <div class="project-media-glow"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Deep Learning & Audio Safety IoT</span>
+              <h3 class="project-title">AI 이어폰 안전 알림 시스템</h3>
+            </div>
+            <p class="project-desc">
+              이어폰을 착용한 상태로 이동하는 보행자들이 뒤쪽 자동차 경적소리나 응급차 사이렌 소리 등을 감지하지 못해 발생하는 사고를 예방하는 보행 안전 보조 모바일 솔루션입니다. 실시간 마이크 오디오 버퍼 가공 및 오디오 분류 모델 연동을 수행했습니다.
+            </p>
+            
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>담당 역할</h5>
+                <p>실시간 오디오 스트림 획득 및 오디오 식별 핵심 모듈 통합</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>주요 기능</h5>
+                <p>Google YAMNet 경량 오디오 식별 신경망 모형 연동, 마이크 데시벨 실시간 가공 및 알람 판별</p>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">TensorFlow Lite</span>
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">YAMNet</span>
+              <span class="project-tag">Noise Meter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Certifications & Languages (자격증 및 어학) --- -->
+  <section class="section" id="credentials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">자격증 및 어학 역량</h2>
+      </div>
+
+      <div class="credentials-wrapper">
+        <!-- Certifications Grid -->
+        <div class="certs-block reveal">
+          <h3 class="skill-category-title"><i class="fa-solid fa-award"></i> 보유 자격증</h3>
+          <div class="certs-grid">
+            <!-- 1 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="cert-info">
+                <h4>정보처리기사</h4>
+                <p>한국산업인력공단</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="cert-info">
+                <h4>SQLD (SQL 개발자)</h4>
+                <p>한국데이터산업진흥원</p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="cert-info">
+                <h4>DAsP (데이터아키텍처 준전문가)</h4>
+                <p>한국데이터산업진흥원</p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <div class="cert-info">
+                <h4>ADsP (데이터분석 준전문가)</h4>
+                <p>한국데이터산업진흥원</p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+              <div class="cert-info">
+                <h4>AWS Certified AI Practitioner</h4>
+                <p>Amazon Web Services</p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="glass-card cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-desktop"></i></div>
+              <div class="cert-info">
+                <h4>컴퓨터활용능력 1급</h4>
+                <p>대한상공회의소</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages Linear Chart -->
+        <div class="langs-block reveal reveal-delay-2">
+          <h3 class="skill-category-title"><i class="fa-solid fa-language"></i> 어학 성적</h3>
+          <div class="langs-container">
+            <!-- TOEIC 920 -->
+            <div class="lang-score-card">
+              <div class="lang-header">
+                <div class="lang-name">
+                  <h4>TOEIC (공식 제출용)</h4>
+                  <span class="lang-desc">인사혁신처 공인등록 (취득일: 22.12.11)</span>
+                </div>
+                <div class="lang-points">920<span>/990</span></div>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill" data-score="93"></div>
+              </div>
+            </div>
+
+            <!-- TOEIC 850 -->
+            <div class="lang-score-card">
+              <div class="lang-header">
+                <div class="lang-name">
+                  <h4>TOEIC (정기 시험)</h4>
+                  <span class="lang-desc">YBM 한국토익위원회 (취득일: 25.03.30)</span>
+                </div>
+                <div class="lang-points">850<span>/990</span></div>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill" data-score="86"></div>
+              </div>
+            </div>
+
+            <!-- TOEIC Speaking IM3 -->
+            <div class="lang-score-card">
+              <div class="lang-header">
+                <div class="lang-name">
+                  <h4>TOEIC Speaking</h4>
+                  <span class="lang-desc">YBM 한국토익위원회 (취득일: 26.01.04)</span>
+                </div>
+                <div class="lang-points">IM3<span>/Level</span></div>
+              </div>
+              <div class="lang-bar-track">
+                <div class="lang-bar-fill green" data-score="68"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Vision & Contact (목표 및 연락처) --- -->
+  <section class="section" id="vision">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Vision & Goals</span>
+        <h2 class="section-title">커리어 비전 및 연락처</h2>
+      </div>
+
+      <div class="vision-grid">
+        <!-- Vision Detail -->
+        <div class="glass-card vision-card reveal">
+          <i class="fa-solid fa-rocket animate-float"></i>
+          <h3>현대백화점그룹 계열사<br>시스템 개발 및 운영 전문가</h3>
+          <p>
+            디지털 트랜스포메이션을 선도하는 <mark>현대백화점그룹 계열사의 IT 시스템 핵심 백엔드 개발 및 인프라 운영 담당자</mark>로 성장하기 위해 헌신합니다. 고객 경험 고도화와 대용량 실시간 트래픽 처리를 가능하게 하는 탄탄한 마이크로서비스 설계 역량으로 기여하겠습니다.
+          </p>
+        </div>
+
+        <!-- Detailed Goal Lists -->
+        <div class="goals-wrapper reveal reveal-delay-2">
+          <div class="goals-column">
+            <h4><i class="fa-solid fa-flag"></i> 집중 실천 목표</h4>
+            <div class="goals-list">
+              <!-- Goal 1 -->
+              <div class="goal-card">
+                <div class="goal-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <div class="goal-desc">
+                  부트캠프 및 학부 과정 내에서 <strong>팀원들과의 적극적인 의사소통</strong>을 통해 아키텍처 완성도와 에러 처리가 뛰어난 높은 완성도의 연동 프로젝트 완성.
+                </div>
+              </div>
+              <!-- Goal 2 -->
+              <div class="goal-card">
+                <div class="goal-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                <div class="goal-desc">
+                  데이터 엔지니어링 인프라와 빅데이터 처리 역량 강화를 위해 <strong>AWS Data Engineer Associate (DEA)</strong> 전문 클라우드 자격 취득 매진.
+                </div>
+              </div>
+              <!-- Goal 3 -->
+              <div class="goal-card">
+                <div class="goal-icon"><i class="fa-solid fa-rotate"></i></div>
+                <div class="goal-desc">
+                  현재 이수 중인 현대퓨처넷의 <strong>MSA 풀스택 교육 과정</strong>과 동국대학교의 전공 이수 요건을 전략적으로 병행하여 깊이 있는 지식 체계 확립.
+                </div>
+              </div>
+              <!-- Goal 4 -->
+              <div class="goal-card">
+                <div class="goal-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <div class="goal-desc">
+                  기본 백엔드 영역을 넘어 <strong>데이터 정제·분석 파이프라인</strong> 및 AI 머신러닝의 트렌디한 IT 핵심 기술들을 선도적으로 체득.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="contact-links-grid reveal">
+        <!-- GitHub Card -->
+        <a href="https://github.com/HongJunPyo0222" target="_blank" class="contact-card">
+          <div class="contact-left">
+            <div class="detail-icon" style="color: #fff; border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05);">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h5>GitHub Repository</h5>
+              <p>github.com/HongJunPyo0222</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right contact-action-icon"></i>
+        </a>
+
+        <!-- Velog Card -->
+        <a href="https://velog.io/@hong_computer" target="_blank" class="contact-card">
+          <div class="contact-left">
+            <div class="detail-icon" style="color: #20c997; border-color: rgba(32,201,151,0.2); background: rgba(32,201,151,0.05);">
+              <i class="fa-solid fa-blog"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Technical Blog</h5>
+              <p>velog.io/@hong_computer</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right contact-action-icon"></i>
+        </a>
+
+        <!-- Email Copy Card -->
+        <div class="contact-card" id="email-card" data-email="hongjunpyo0222@gmail.com">
+          <div class="contact-left">
+            <div class="detail-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Direct Email</h5>
+              <p>hongjunpyo0222@gmail.com</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-copy contact-action-icon" title="이메일 주소 복사"></i>
+        </div>
+
+        <!-- Phone Card (Optional / Placeholder template) -->
+        <div class="contact-card" id="phone-card" data-phone="010-0000-0000">
+          <div class="contact-left">
+            <div class="detail-icon" style="color: var(--accent-green); border-color: rgba(0, 255, 135, 0.2); background: rgba(0, 255, 135, 0.05)">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Direct Mobile</h5>
+              <p>연락처 확인 (클릭 시 복사)</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-copy contact-action-icon" title="연락처 복사"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        JUNPYO<span>.dev</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Hong Jun Pyo. All rights reserved. Designed & Coded with Premium Quality.
+      </p>
+    </div>
+  </footer>
+
+  <!-- --- Clipboard Alert Toast --- -->
+  <div class="toast" id="clipboard-toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">클립보드에 복사되었습니다!</span>
+  </div>
+
+  <!-- --- JavaScript Link --- -->
+  <script src="script.js"></script>
+</body>
+</html>
