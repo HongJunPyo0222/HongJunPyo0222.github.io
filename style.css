@@ -1020,7 +1020,33 @@ header.scrolled {
 
 .project-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.project-contributions {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.project-contributions summary {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.project-contributions ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.project-contributions li {
+  margin-top: 0.75rem;
+}
+
+.award-highlight {
+  margin-bottom: 2.5rem;
 }
 
 /* --- Certifications & Languages --- */

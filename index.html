@@ -338,10 +338,10 @@
         <div class="timeline-item right reveal">
           <div class="timeline-node"></div>
           <div class="glass-card timeline-box">
-            <span class="timeline-date">26.04.06 ~ 진행 중</span>
-            <h3>현대퓨처넷 Full-Stack 전문가 과정 10기</h3>
-            <p><strong>MSA 기반 Full Stack 개발 전문가 양성과정</strong></p>
-            <p>마이크로서비스 아키텍처(MSA) 기반 Spring Cloud 백엔드 설계 및 React 프론트엔드 통합 풀스택 엔지니어링 훈련 중.</p>
+            <span class="timeline-date">26.04.06 ~ 26.09.04</span>
+            <h3>현대퓨처넷 Full-Stack 전문가 과정 11기 수료</h3>
+            <p><strong>KOSA 우수수료생 선정</strong></p>
+            <p>MSA 기반 Full Stack 개발 전문가 양성과정을 수료했습니다. 팀 프로젝트에서 인사 관리, 커머스 데이터 분석, 크리에이터 운영 백엔드와 AWS 배포를 구현했습니다.</p>
           </div>
         </div>
       </div>
@@ -357,6 +357,162 @@
       </div>
 
       <div class="projects-list">
+        <!-- HiSelectors -->
+        <article class="project-item reveal" id="project-hiselectors">
+          <div class="project-media-wrapper">
+            <img src="asset/hiselectors-dashboard.png" alt="HiSelectors의 지원자 승인 및 매출·정산 관리 대시보드" class="project-img" loading="lazy" width="1600" height="900">
+            <div class="project-media-glow"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Creator Operations · Backend &amp; AWS</span>
+              <h3 class="project-title">HiSelectors</h3>
+            </div>
+            <p class="project-desc">크리에이터 발굴부터 AI 분석 기반 선발, 콘텐츠 검수, 캠페인·성과·정산까지 연결하는 운영 플랫폼입니다. SNS 데이터 수집과 크리에이터 운영 API, AWS 배포 환경을 담당했습니다.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>담당 역할</h5>
+                <p>크리에이터 발굴·정량 평가, 기수·권한 관리, 지원자 미디어 수집, 운영 인프라</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>핵심 개선</h5>
+                <p>ECS Blue/Green 자동 배포와 실패 시 롤백, API·스케줄러 실행 분리</p>
+              </div>
+            </div>
+            <details class="project-contributions">
+              <summary>직접 구현한 기능과 개선 사례</summary>
+              <ul>
+                <li><strong>SNS 발굴 파이프라인:</strong> YouTube Data API·Meta Graph API를 연동하고, 카테고리·키워드별 일괄 발굴과 크리에이터 풀 조회·필터링을 구현했습니다.</li>
+                <li><strong>정량 평가와 수집:</strong> 팔로워·참여율·최근 활동을 반영한 상대 영향력 순위, 지원자 정량 지표 조회, SNS 미디어 URL·프로필 이미지·공개 이메일 수집을 구현했습니다.</li>
+                <li><strong>운영 API:</strong> 기수 CRUD, 활동 기간에 따른 권한 갱신, 셀렉터스 상세·패널티·블랙리스트 조회와 정산 요약 집계를 개발했습니다.</li>
+                <li><strong>배포 안정화:</strong> GitHub Actions·CloudFormation 기반 ECS 배포, DB 마이그레이션 사전 검증, Blue/Green 자동 롤백과 스케줄러 중복 실행 방지를 구성했습니다.</li>
+              </ul>
+            </details>
+            <div class="project-tags">
+              <span class="project-tag">Java 21</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">JPA</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">ECS Fargate</span>
+              <span class="project-tag">GitHub Actions</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/HD-Fuma/be-hiselectors" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="HiSelectors GitHub 저장소 (새 탭)"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              <a href="https://github.com/HD-Fuma/be-hiselectors/pulls?q=is%3Apr+is%3Amerged+author%3AHongJunPyo0222" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="HiSelectors의 홍준표 기여 PR (새 탭)">기여 PR <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- H-Insight-AI -->
+        <article class="project-item reverse reveal" id="project-h-insight">
+          <div class="project-media-wrapper">
+            <img src="asset/h-insight-dashboard.png" alt="H-Insight-AI의 구매·조회·검색 데이터 기반 대시보드와 실시간 급상승 랭킹 발표 자료" class="project-img" loading="lazy" width="2600" height="1463">
+            <div class="project-media-glow"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Commerce · Data Pipeline &amp; Analytics</span>
+              <h3 class="project-title">H-Insight-AI</h3>
+            </div>
+            <p class="project-desc">고객에게 상품 탐색과 AI 응답을, 입점업체에게 판매 인사이트를 제공하는 AI 홈쇼핑 플랫폼입니다. 구매·행동 데이터를 수집·집계해 대시보드와 판매 전략으로 연결했습니다.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>담당 역할</h5>
+                <p>장바구니·주문·리뷰, 데이터 파이프라인, 분석 대시보드, 실시간 랭킹</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>핵심 개선</h5>
+                <p>랭킹 합산을 요청마다 실행하던 방식에서 10초 주기 사전 계산으로 전환</p>
+              </div>
+            </div>
+            <details class="project-contributions">
+              <summary>직접 구현한 기능과 개선 사례</summary>
+              <ul>
+                <li><strong>데이터 수집·집계:</strong> MySQL 변경 데이터를 위한 Debezium CDC와 Kafka Connect S3 Sink를 구성하고, Athena·Lambda·EventBridge로 매출 집계 JSON을 생성했습니다.</li>
+                <li><strong>분석 화면과 AI:</strong> S3 집계 데이터를 대시보드·상품 분석 화면에 연결하고, KoELECTRA 리뷰 감성 분석 및 집계 지표 기반 LLM 판매 전략 Lambda를 구현했습니다.</li>
+                <li><strong>실시간 랭킹:</strong> Kafka 이벤트를 Redis Sorted Set의 분 단위 버킷에 적재했습니다. 최근 1시간 합산을 10초마다 미리 계산해 요청 경로의 ZUNIONSTORE와 반복 합산 병목을 제거했습니다.</li>
+                <li><strong>구매 흐름:</strong> 장바구니·주문·구매이력 API와 화면을 연동하고, 로그인 사용자 식별 및 실제 구매자만 리뷰를 작성할 수 있는 검증을 적용했습니다.</li>
+              </ul>
+            </details>
+            <div class="project-tags">
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">MyBatis</span>
+              <span class="project-tag">Kafka</span>
+              <span class="project-tag">Redis</span>
+              <span class="project-tag">S3 · Athena · Lambda</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/HongJunPyo0222/H-Insight-AI" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="H-Insight-AI GitHub 저장소 (새 탭)"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              <a href="https://github.com/HongJunPyo0222/H-Insight-AI/commits/dev/?author=HongJunPyo0222" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="H-Insight-AI의 홍준표 기여 커밋 (새 탭)">기여 커밋 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hyundai-HR -->
+        <article class="project-item reveal" id="project-hyundai-hr">
+          <div class="glass-card project-content">
+            <span class="project-category">Human Resources</span>
+            <h4 class="project-title">인사 데이터의<br>변경부터 이력까지</h4>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>직원·부서 관리</h5>
+                <p>등록 · 조회 · 검색 · 조직도</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>인사 변경</h5>
+                <p>승진 · 부서 이동 · 호봉 변경</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>발령 이력</h5>
+                <p>변경 시점의 소속·직급·호봉 보존</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>고과 평가</h5>
+                <p>평가 권한 검증 · 이력 조회</p>
+              </div>
+            </div>
+            <p class="project-desc">Java · JDBC · Oracle DB</p>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">HR Management · Java &amp; Database</span>
+              <h3 class="project-title">Hyundai-HR</h3>
+            </div>
+            <p class="project-desc">인사·근태·휴가·급여 업무를 관리하는 Java 기반 HR 시스템입니다. 직원·부서·고과 평가의 DAO·DTO·Service 계층과 인사 변경 이력 관리 기능을 담당했습니다.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item">
+                <h5>담당 역할</h5>
+                <p>직원·부서 관리, 조직도 조회, 인사 고과 및 발령 이력</p>
+              </div>
+              <div class="project-meta-item">
+                <h5>핵심 개선</h5>
+                <p>과거 근무 이력에 현재 호봉이 표시되던 오류를 수정해 이력 정합성 개선</p>
+              </div>
+            </div>
+            <details class="project-contributions">
+              <summary>직접 구현한 기능과 개선 사례</summary>
+              <ul>
+                <li><strong>인사 관리:</strong> 직원 등록·상세 조회·이름/부서 검색, 승진·호봉 변경·부서 이동·퇴사 예정일 관리 기능을 구현했습니다.</li>
+                <li><strong>조직도:</strong> 상위·하위 부서 관계를 트리로 구성하고, 특정 부서의 모든 하위 부서를 조회하도록 구현했습니다.</li>
+                <li><strong>고과 평가:</strong> 같은 부서의 관리자만 평가를 등록할 수 있도록 권한을 검증하고, 직원별 평가 이력을 조회하도록 구현했습니다.</li>
+                <li><strong>DB 이력 관리:</strong> 인사 변경 시 발령 이력을 기록하는 Oracle 트리거와 퇴사일 기준 상태를 갱신하는 프로시저·스케줄러를 작성했습니다.</li>
+              </ul>
+            </details>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">JDBC</span>
+              <span class="project-tag">Oracle DB</span>
+              <span class="project-tag">PL/SQL</span>
+              <span class="project-tag">DAO · DTO · Service</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/HongJunPyo0222/Hyundai-HR" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Hyundai-HR GitHub 저장소 (새 탭)"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              <a href="https://github.com/HongJunPyo0222/Hyundai-HR/commits/dev/?author=HongJunPyo0222" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Hyundai-HR의 홍준표 기여 커밋 (새 탭)">기여 커밋 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </article>
+
         <!-- Project 1 -->
         <div class="project-item reveal">
           <div class="project-media-wrapper">
@@ -438,7 +594,16 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">Credentials</span>
-        <h2 class="section-title">자격증 및 어학 역량</h2>
+        <h2 class="section-title">수상·자격·어학</h2>
+      </div>
+
+      <div class="glass-card detail-card award-highlight reveal">
+        <div class="detail-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+        <div class="detail-info">
+          <h3>KOSA 우수수료생</h3>
+          <p>현대퓨처넷 MSA 기반 Full Stack 개발 전문가 양성과정 11기</p>
+          <p>교육 기간: 2026.04.06 ~ 2026.09.04 · 수료 및 우수수료생 선정</p>
+        </div>
       </div>
 
       <div class="credentials-wrapper">
@@ -589,7 +754,7 @@
               <div class="goal-card">
                 <div class="goal-icon"><i class="fa-solid fa-rotate"></i></div>
                 <div class="goal-desc">
-                  현재 이수 중인 현대퓨처넷의 <strong>MSA 풀스택 교육 과정</strong>과 동국대학교의 전공 이수 요건을 전략적으로 병행하여 깊이 있는 지식 체계 확립.
+                  <strong>KOSA 우수수료생으로 마친 MSA 풀스택 교육 과정</strong>의 프로젝트 경험을 바탕으로, 서비스 운영과 데이터 처리 역량을 지속적으로 고도화.
                 </div>
               </div>
               <!-- Goal 4 -->

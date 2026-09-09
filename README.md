@@ -61,7 +61,7 @@ Collaboration: Notion, Mattermost
 
 26.01.13 ~ 01.14: 동국대학교 AI Starter Program
 
-26.04.06 ~ 진행 중: 현대퓨처넷 MSA 기반 Full Stack 개발 전문가 양성과정 10기
+26.04.06 ~ 26.09.04: 현대퓨처넷 MSA 기반 Full Stack 개발 전문가 양성과정 11기 수료 · KOSA 우수수료생 선정
 
 5. Projects (포트폴리오 - 카드 레이아웃)
 
