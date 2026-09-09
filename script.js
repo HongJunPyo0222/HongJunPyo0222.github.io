@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const terminalText = document.getElementById('terminal-text');
   const devProfileData = {
     name: "홍준표 (Hong Jun Pyo)",
-    role: "Backend & Data Engineer",
-    status: "Building robust APIs & ETL Pipelines...",
+    role: "Backend Developer",
+    status: "Building reliable services together...",
     coreStack: ["Java", "Spring Cloud", "Python", "C++", "Docker", "AWS", "SQL"],
     interests: ["Tableau", "ETL Pipelines", "PaddleOCR", "MSA", "Database Design"],
     hobbies: ["Bodybuilding", "Running", "Climbing"],
