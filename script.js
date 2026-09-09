@@ -170,11 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (phoneCard) {
     phoneCard.addEventListener('click', () => {
-      // In practice, this could contain his actual phone number or a placeholder prompt
-      const textToCopy = "010-3837-7756"; // Standard placeholder or target
+      const textToCopy = phoneCard.getAttribute('data-phone');
       navigator.clipboard.writeText(textToCopy)
         .then(() => {
-          triggerToast('연락처(010-3837-7756)가 복사되었습니다!');
+          triggerToast(`연락처(${textToCopy})가 복사되었습니다!`);
         })
         .catch(err => {
           console.error('클립보드 복사 실패: ', err);
